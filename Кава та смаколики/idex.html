@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кав'ярня "MorningStar"</title>
+    <link rel="stylesheet" href=".//index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&family=Molengo&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="menunav">
+        <div class="menu_buttons">
+            <div class="menu_button" onclick="toggleMenu()"> <a href="#first_text"> About </a></div>
+            <div class="menu_button" onclick="toggleMenu()"><a href="#menu">Menu</a></div>
+            <div><img src=".//image/star.svg" alt="star"></div>
+            <div class="menu_button" onclick="toggleMenu()"><a href="#shop">Shop</a></div>
+            <div class="menu_button" onclick="toggleMenu()"><a href="#contactus">Contact</a></div>
+        </div>
+        
+        <div id="mobileMenu" class="menu_small">
+            <div class="menu_button" onclick="toggleMenu()"><a href="#first_text">About</a></div>
+            <div class="menu_button" onclick="toggleMenu()"><a href="menu">Menu</a></div>
+            <div class="menu_button" onclick="toggleMenu()"><a href="shop">Shop</a></div>
+            <div class="menu_button" onclick="toggleMenu()"><a href="#contact">Contact</a></div>
+        </div>
+        
+        <div><img src=".//image/line.svg" alt="line"></div>
+    </div>
+    <h1 class="header_text">START YOUR DAY WITH OUR COFEE.</h1>
+    <div class="header_photo"><img src=".//image/image1.svg" alt="image1"></div>
+    <div class="large_text" id="first_text">You'll be greeted by stunning visuals of our
+        freshly brewed beverages, delicious pastries,
+        and cozy atmosphere.</div>
+    <div class="small_text" id="second_text">Quick caffeine fix, a relaxing spot to unwind, or
+        aplace to connect with your friends.</div>
+    <div class="image2"><img src="./image/image2.svg" alt="image2"></div>
+    <div class="large_text" id="third_text">We're committed to using only the freshest, highest
+        quality ingredients in everything we make.</div>
+    
+    <div class="small_text" id="fourth_text">We have a selection of fresh coffee beans
+        that we choice.</div>
+
+    <div class="image3"><img src="./image/image3.svg" alt=""></div>
+
+    <div class="large_text" id="first_text">Our baristas are highly trained and skilled,
+        ensuring that each drink is made with care
+        and precision.</div>
+
+        <div class="small_text" id="second_text">Our expert baristas are take pride in delivering quality and
+            consistency with every sip.</div>
+
+    <div class="image4"><img src="./image/image4.svg" alt=""></div>
+
+    <div class="line"><img src="./image/line.svg" alt=""></div>
+
+    <div class="menuvar" id="menu">
+        <button onclick="showMenu('food')">Food</button>
+    <button onclick="showMenu('coffee')">Coffee</button>
+    <button onclick="showMenu('non-coffee')">Non coffee</button>
+    </div>
+
+    <div id="food-menu" class="menu">
+        <div class="food">
+            <ul>
+                <li><img src="./image/croissant.svg" alt=""></li>
+                <li>Croissant</li>
+                <li id="price">$5.66</li>
+            </ul>
+            <ul>
+                <li><img src="./image/browny.svg" alt=""></li>
+                <li>Browny</li>
+                <li id="price">$4.22</li>
+            </ul>
+            <ul>
+                <li><img src="./image/cinnabon.svg" alt=""></li>
+                <li>Cinnabon</li>
+                <li id="price">$4.15</li>
+            </ul>
+            <ul>
+                <li><img src="./image/cheesecake.svg" alt=""></li>
+                <li>Cheesecake</li>
+                <li id="price">$5.66</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="coffee-menu" class="menu">
+        <div class="food">
+            <ol>
+                <li><img src="./image/americano.svg" alt=""></li>
+                <li>Americano</li>
+                <li id="price">$2.66</li>
+            </ol>
+            <ol>
+                <li><img src="./image/latte.svg" alt=""></li>
+                <li>Latte</li>
+                <li id="price">$2.22</li>
+            </ol>
+            <ol>
+                <li><img src="./image/macchiato.svg" alt=""></li>
+                <li>Macchiato</li>
+                <li id="price">$3.15</li>
+            </ol>
+            <ol>
+                <li><img src="./image/tonic.svg" alt=""></li>
+                <li>Tonic</li>
+                <li id="price">$3.66</li>
+            </ol>
+        </div>
+    </div>
+
+    <div id="non-coffee-menu" class="menu">
+        <div class="food">
+            <ol>
+                <li><img src="./image/blacktea.svg" alt=""></li>
+                <li>Black tea</li>
+                <li id="price">$2.66</li>
+            </ol>
+            <ol>
+                <li><img src="./image/greentea.svg" alt=""></li>
+                <li>Green tea</li>
+                <li id="price">$2.22</li>
+            </ol>
+            <ol>
+                <li><img src="./image/hotchoco.svg" alt=""></li>
+                <li>Hot choco</li>
+                <li id="price">$3.15</li>
+            </ol>
+            <ol>
+                <li><img src="./image/matcha.svg" alt=""></li>
+                <li>Matcha</li>
+                <li id="price">$3.66</li>
+            </ol>
+        </div>
+    </div>
+
+    
+    <div class="line"><img src="./image/line.svg" alt=""></div>
+
+    <div class="shop" id="shop">Shop</div>
+
+    <div class="table">
+        <table>
+            <tr>
+                <th><img src="./image/frenchpress.svg" alt=""></th>
+                <th><img src="./image/aeropress.svg" alt=""></th>
+                <th><img src="./image/coldbrew.svg" alt=""></th>
+                <th><img src="./image/columbia.svg" alt=""></th>
+            </tr>
+            <tr>
+                <th>French Press</th>
+                <th>Aeropress</th>
+                <th>Cold Brew</th>
+                <th>Columbia</th>
+            </tr>
+            <tr>
+                <th>$5.66</th>
+                <th>$5.66</th>
+                <th>$5.66</th>
+                <th>$5.66</th>
+            </tr>
+        </table>
+    </div>
+    <div class="line"><img src="./image/line.svg" alt=""></div>
+
+    <div class="frame1">
+        <h1 class="header_text" id="contactus">Introducing our cafe</h1>
+        <iframe id="frame" src="https://www.youtube.com/embed/yJc_hMAjjwc?si=A6fWDu02S5xqE4F0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="line"><img src="./image/line.svg" alt=""></div>
+<div class="frame2">
+    <form action="/submit_order" method="post">
+        <label id="delivery" for="name">Name:</label>
+        <br>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label id="delivery" for="email">Email:</label>
+        <br>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label id="delivery" for="phone">Phone number:</label>
+        <br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="123-45-678" required>
+        <br>
+        <label id="delivery" for="address">Address:</label>
+        <br>
+        <textarea id="address" name="address" rows="4" required></textarea>
+        <br>
+        <label id="delivery" for="coffee_type">Coffe type:</label>
+        <br>
+        <select id="coffee_type" name="coffee_type">
+            <option value="espresso">Columbia</option>
+            <option value="latte">Cold brew</option>
+            <option value="cappuccino">Aeropress</option>
+        </select>
+        <br>
+        <label id="delivery" for="quantity">Quantity:</label>
+        <br>
+        <input type="number" id="quantity" name="quantity" min="1" required>
+        <br>
+        <label id="delivery" for="review">Adds:</label>
+        <br>
+        <textarea id="review" name="review" rows="4" required></textarea>
+        <br>
+        <button id="button4" type="submit">Deliver</button>
+    </form>
+    <div id="logos">Order our craft coffee</div>
+</div>
+    
+<footer>
+    <div class="address">
+        <p><strong>Address:</strong> Street. Kavova, 123, Lviv, Ukraine</p>
+    </div>
+    <div class="hours">
+        <p><strong>Work hours:</strong> Mon-Fri: 7:00 - 22:00, Sat-Sun: 8:00 - 20:00</p>
+    </div>
+    <div class="contact">
+        <p><strong>Контакти:</strong> Phone number: +380 99 139 4024, Email: info@kavyarnya.com</p>
+    </div>
+    <div class="social">
+        <p>Follow us in social-media: <a href="#" target="_blank">Facebook</a> | <a href="#" target="_blank">Instagram</a> | <a href="#" target="_blank">Twitter</a></p>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 Cafe "Morning Star". Privacy.</p>
+    </div>
+</footer>
+
+    
+
+    <script>
+       function showMenu(menuType) {
+      var buttons = document.querySelectorAll('.menuvar button');
+      buttons.forEach(function(button) {
+        button.classList.remove('active');
+      });
+
+      event.target.classList.add('active');
+
+      var menus = document.querySelectorAll('.menu');
+      menus.forEach(function(menu) {
+        menu.classList.remove('show');
+      });
+
+      document.getElementById(menuType + '-menu').classList.add('show');
+    }
+
+    function toggleMenu() {
+    var mobileMenu = document.getElementById('mobileMenu');
+    mobileMenu.classList.toggle('show');
+}
+
+    </script>
+</body>
+</html>
+
